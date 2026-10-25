@@ -1,0 +1,6 @@
+@SapImpactAnalyzer_HostAddress = http://localhost:5181
+
+GET {{SapImpactAnalyzer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

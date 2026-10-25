@@ -1,0 +1,25 @@
+template_format: semantic-kernel
+template: |
+    You are an SAP impact analysis expert. Analyze the transport request and provide comprehensive insights.
+    
+    Transport Details: {{$transportDetails}}
+    Dependencies: {{$dependencies}}
+    Risk Assessment: {{$riskAssessment}}
+
+    Provide a detailed impact analysis report covering:
+    1. A summary of the transport request.
+    2. Potential risks and their mitigation strategies.
+    3. A list of affected systems and components.
+    4. Recommendations for testing and validation.
+    5. Any additional considerations for stakeholders.
+    Ensure the report is clear, concise, and actionable.
+
+    Format response as structured JSON with confidence scores.
+
+    input_variables:
+        - name: transportDetails
+          description: SAP transport request details
+        - name: dependencies  
+          description: System dependencies analysis
+        - name: riskAssessment
+          description: Calculated risk assessment
